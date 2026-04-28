@@ -5,27 +5,18 @@
 
 This repository contains my personal solutions to competitive programming problems from various platforms. My goal is to document my progress and build a library of reusable algorithms.
 
-## 🚀 Platforms Covered
+# Competitive Programming Solutions 🏆
 
-- **Codeforces**
-- **LeetCode**
-- **Beecrowd** (formerly URI)
-- **AtCoder**
+This repository stores my solutions to various competitive programming contests and platforms, implemented in C++.
 
-## 📂 Project Structure
+## 📂 Repository Structure
 
-The solutions are organized by platform and then by category or contest:
+The project is organized by competition or platform. Each problem has its own directory containing the source code and a Makefile for easy compilation.
 
 ```text
 .
-├── Codeforces/
-│   ├── Round_700/
-│   │   └── problem_A.cpp
-│   └── Problemset/
-├── LeetCode/
-│   ├── DynamicProgramming/
-│   └── Graphs/
-├── DataStructures/      <-- Reusable implementations
-│   ├── SegmentTree.cpp
-│   └── UnionFind.cpp
-└── Template.cpp         <-- My default setup for fast I/O
+└── interfatecs/          # Contest name
+    └── K/                # Problem ID/Name
+        ├── k.cpp         # Solution source code
+        ├── Makefile      # Build script
+        └── k             # Compiled binary (executable)
