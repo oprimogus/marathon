@@ -1,8 +1,5 @@
-#include <algorithm>
-#include <iostream>
-#include <vector>
-
-
+#include <bits/stdc++.h>
+using namespace std;
 // About the problem
 // V Level 1
 // C Level 2
@@ -20,18 +17,15 @@
 // 3. Source in M
 // V to M: v * 2t * 2
 // C to M: c * t * 2
-
-
 int main() {
     int t, v, c, m;
-    std::cin >> t >> v >> c >> m;
-    std::vector<int> options = {
-        ((c * t * 2) + (m * 2 * t * 2)),
-        ((v * t * 2) + (m * t * 2)),
-        ((c * t * 2) + (c * t * 2))
-    };
+        if (!(std::cin >> t >> v >> c >> m)) return 0;
     
-    auto min = std::min_element(options.begin(), options.end());
-    int min_result = *min;
-    std::cout << min_result << std::endl;
+        int min_result = std::min({
+            ((c * t * 2) + (m * 2 * t * 2)),
+            ((v * t * 2) + (m * t * 2)),
+            ((c * t * 2) + (c * t * 2))
+        });
+    
+        std::cout << min_result << "\n";
 }
